@@ -17,6 +17,16 @@ class Player extends React.Component {
     }
 }
 
+class Board extends React.Component {
+    render() {
+        return (
+            <div>
+                the board!
+            </div>
+        )
+    }
+}
+
 class App extends React.Component {
     render() {
         return (
@@ -24,6 +34,7 @@ class App extends React.Component {
                 <Header />
                 <Player whichPlayer='X' />
                 <Player whichPlayer='O' />
+                <Board />
             </div>
         )
     }
