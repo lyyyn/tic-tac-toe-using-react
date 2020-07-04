@@ -17,15 +17,35 @@ class Player extends React.Component {
     }
 }
 
-class Board extends React.Component {
+class Square extends React.Component {
     render() {
         return (
             <div>
-                the board!
+                <h4>A</h4>
             </div>
         )
     }
 }
+
+class Board extends React.Component {
+    render() {
+        return (
+            <div>
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+                <Square />
+            </div>
+        )
+    }
+}
+
+
 
 class App extends React.Component {
     render() {
