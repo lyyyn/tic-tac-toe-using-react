@@ -9,7 +9,7 @@ class Header extends React.Component {
 class Player extends React.Component {
     render() {
         return (
-            <div>
+            <div className={this.props.whichPlayer}>
                 <h2>Player {this.props.whichPlayer} </h2>
                 <h3>Wins: </h3>
             </div>
@@ -30,7 +30,7 @@ class Square extends React.Component {
 class Board extends React.Component {
     render() {
         return (
-            <div>
+            <div className='board'>
                 <Square />
                 <Square />
                 <Square />
@@ -44,8 +44,6 @@ class Board extends React.Component {
         )
     }
 }
-
-
 
 class App extends React.Component {
     render() {
